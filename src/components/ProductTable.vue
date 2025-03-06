@@ -38,7 +38,7 @@ const getStockClass = (quantity: number) => {
         <ProductExport :skis="skis" />
         <ProductSearch @update:search="searchQuery = $event" />
 
-        <p>Cliquez sur un ski pour le modifier.</p>
+        <p>Cliquez sur un ski pour le modifier et afficher ses détails.</p>
         <div v-if="alertMessage" class="alert alert-warning alert-dismissible show" role="alert">
             <strong>Attention !</strong> {{ alertMessage }}
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
