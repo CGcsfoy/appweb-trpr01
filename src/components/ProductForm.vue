@@ -53,6 +53,9 @@ const validateForm = () => {
 const handleSubmit = () => {
     if (!validateForm()) return;
     emit('submit', { ...newSki.value });
+    newSki.value = {
+        id: 0, brand: '', name: '', price: 0, description: '', quantity: 0
+    };
 };
 </script>
 
